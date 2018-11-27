@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.22.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1123 Windows, HP Inc., LIC=03C74-FAXEV-NNYAF-6KMGV-3YTSW-WCV2R
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.22
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.22
+Dialog DLL:      DCM.DLL V1.13.9.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.21.0.0
+ 
+<h2>Project:</h2>
+D:\STM32chengxu\cardle head\MDK-ARM\can2.uvprojx
+Project File Date:  11/25/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'can2'
+compiling gimbal_task.c...
+gimbal_task.h(7): warning:  #1295-D: Deprecated declaration Gimbal_control - give arg types
+  void Gimbal_control();
+gimbal_task.h(8): warning:  #1-D: last line of file ends without a newline
+  void Ref_UpdataFromRCStick(void);
+gimbal.h(58): warning:  #1295-D: Deprecated declaration SetGimbalMotorOutput - give arg types
+  void SetGimbalMotorOutput();
+imu.h(218): warning:  #1295-D: Deprecated declaration get_pitchyaw - give arg types
+  void get_pitchyaw();
+q6623.h(32): warning:  #1295-D: Deprecated declaration Motor_CAN_Send - give arg types
+  void Motor_CAN_Send();
+q6623.h(41): warning:  #1-D: last line of file ends without a newline
+  void GetEncoderBias(volatile Encoder *v, uint8_t *msg);
+angle.h(25): warning:  #1-D: last line of file ends without a newline
+  extern float Angle_Process(float angle);
+minipc.h(31): warning:  #1-D: last line of file ends without a newline
+  extern MiniPC_Res MiniPC_Data;
+gimbal_task.c: 8 warnings, 0 errors
+compiling stm32f4xx_it.c...
+..\MDK-ARM\minipc.h(31): warning:  #1-D: last line of file ends without a newline
+  extern MiniPC_Res MiniPC_Data;
+../Src/stm32f4xx_it.c: 1 warning, 0 errors
+compiling minipc.c...
+minipc.h(31): warning:  #1-D: last line of file ends without a newline
+  extern MiniPC_Res MiniPC_Data;
+imu.h(218): warning:  #1295-D: Deprecated declaration get_pitchyaw - give arg types
+  void get_pitchyaw();
+angle.h(25): warning:  #1-D: last line of file ends without a newline
+  extern float Angle_Process(float angle);
+q6623.h(32): warning:  #1295-D: Deprecated declaration Motor_CAN_Send - give arg types
+  void Motor_CAN_Send();
+q6623.h(41): warning:  #1-D: last line of file ends without a newline
+  void GetEncoderBias(volatile Encoder *v, uint8_t *msg);
+minipc.c: 5 warnings, 0 errors
+compiling main.c...
+..\MDK-ARM\q6623.h(32): warning:  #1295-D: Deprecated declaration Motor_CAN_Send - give arg types
+  void Motor_CAN_Send();
+..\MDK-ARM\q6623.h(41): warning:  #1-D: last line of file ends without a newline
+  void GetEncoderBias(volatile Encoder *v, uint8_t *msg);
+..\MDK-ARM\imu.h(218): warning:  #1295-D: Deprecated declaration get_pitchyaw - give arg types
+  void get_pitchyaw();
+..\MDK-ARM\gimbal.h(58): warning:  #1295-D: Deprecated declaration SetGimbalMotorOutput - give arg types
+  void SetGimbalMotorOutput();
+..\MDK-ARM\gimbal_task.h(7): warning:  #1295-D: Deprecated declaration Gimbal_control - give arg types
+  void Gimbal_control();
+..\MDK-ARM\gimbal_task.h(8): warning:  #1-D: last line of file ends without a newline
+  void Ref_UpdataFromRCStick(void);
+..\MDK-ARM\minipc.h(31): warning:  #1-D: last line of file ends without a newline
+  extern MiniPC_Res MiniPC_Data;
+../Src/main.c(155): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+PIOF,
+PIO_PIN_14,0);
+../Src/main.c(488): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(
+PIOF,
+PIO_PIN_14,1);
+../Src/main.c: 9 warnings, 0 errors
+linking...
+Program Size: Code=21560 RO-data=752 RW-data=544 ZI-data=3440  
+FromELF: creating hex file...
+"can2\can2.axf" - 0 Error(s), 23 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.0.pack
+                ARM::CMSIS:CORE:5.0.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\STM32chengxu\cardle head\MDK-ARM\RTE\_can2
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.0
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>
